@@ -1,11 +1,11 @@
--- btw to use "free russo egg" make sure to be near a russo egg so u can get it for free
+-- free russo egg patched
 -- game: https://www.roblox.com/games/5852812686/PRO-EGG-Candy-Clicking-Simulator
 
 
 
 getgenv().autotap = false;
 getgenv().autorebirth = false;
-getgenv().freeegg = false;
+--getgenv().freeegg = false;
 
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/AikaV3rm/UiLib/master/Lib.lua')))()
@@ -31,7 +31,7 @@ b:Toggle("Auto Rebirth",function(bool)
     end
 end)
 
-
+--[[
 b:Toggle("Free Russo Egg",function(bool)
     getgenv().freeegg = bool
     print("Free Russo Egg: ", bool);
@@ -39,6 +39,7 @@ b:Toggle("Free Russo Egg",function(bool)
         getegg();
     end
 end)
+--]]
 
 
 
@@ -71,7 +72,7 @@ while autorebirth == true do
 end
 
 
-function getegg()
+--[[function getegg()
 spawn(function()
         while freeegg == true do
             local args = {
@@ -84,3 +85,4 @@ spawn(function()
         end
     end)
 end
+--]]
