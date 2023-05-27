@@ -1,0 +1,29 @@
+local count = 1
+for k, v in pairs(workspace:GetChildren()) do 
+   if v.Name == "Badge Giver (open me)" then
+       v.Name = "badgegiver" .. count
+       count += 1
+   end
+end
+
+local badgegiver = Instance.new("Folder", game.workspace)
+badgegiver.Name = "badgegivers"
+local parent = game.workspace.badgegivers
+game.workspace.badgegiver1.Parent = parent
+game.workspace.badgegiver2.Parent = parent
+game.workspace.badgegiver3.Parent = parent
+game.workspace.badgegiver4.Parent = parent
+game.workspace.badgegiver5.Parent = parent
+game.workspace.badgegiver6.Parent = parent
+game.workspace.badgegiver7.Parent = parent
+game.workspace.badgegiver8.Parent = parent
+game.workspace.badgegiver9.Parent = parent
+game.workspace.badgegiver10.Parent = parent
+game.workspace.badgegiver11.Parent = parent
+
+local folder = game.workspace.badgegivers
+
+for i, Obj in next, folder:GetChildren() do
+    game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = Obj.CFrame
+    wait(0.5)
+end
