@@ -1,4 +1,5 @@
 -- new update: fixed it stopping after a bit
+-- game: https://rblx.games/13159565330
 
 while true do
 for i,v in pairs(game.workspace.Cakes:GetChildren()) do
