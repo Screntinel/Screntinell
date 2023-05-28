@@ -1,4 +1,5 @@
 -- new update: made line 15 all the way to line 25 more shorter
+-- game: https://rblx.games/10704934612
 
 local count = 1
 for k, v in pairs(workspace:GetChildren()) do 
