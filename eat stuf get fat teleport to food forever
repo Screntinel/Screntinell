@@ -1,0 +1,6 @@
+for i,v in pairs(game.workspace.Cakes:GetChildren()) do
+        if v:IsA"Part" then
+            game:GetService"Players".LocalPlayer.Character:FindFirstChild"HumanoidRootPart".CFrame = v.CFrame
+            task.wait(0.1)
+    end
+end 
